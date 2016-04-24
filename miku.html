@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>初音未来 中秋明月Ver.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 50px;
+            background-image:linear-gradient( rgba(220,200,140,0.5),rgba(120,90,30,1) )
+        }
+        .miku-icon img {
+            margin-top:-18px;
+            width: 50px;
+            height: 50px;   
+        }
+        .carousel {
+            margin-bottom: 60px;
+            height: 500px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+        .carousel .item img {
+            
+            width: 100%;
+            height: 500px;
+            
+        }
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        .tab-pane img {
+            border-radius: 300px;
+        }
+         .tabs {
+            padding: 30px 0;
+        }
+
+        .tabs-heading {
+            margin-top: 100px;
+            font-size: 50px;
+            color: #2a6496;
+        }
+        .navbar-nav ul {
+            background-color:#6E5620;
+        }
+        .nav-tabs{
+            border-bottom: 1px solid rgba(120,100,50,0.8);
+            margin-bottom: 10px;
+        }
+        .divider {
+            border-top: 1px solid rgba(120,100,50,0.8);
+        }
+        .col-md-5,
+        .col-md-6{
+            text-align: center;
+        }
+        
+        .col-md-4 img {
+            width: 70%;
+        }
+        .col-md-4 {
+            margin: 50px 0;
+            text-align: center;
+        }
+        .footer {
+            padding: 10px 50px;
+            text-align: center;
+            background-color: #000;   
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="menu-nav" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand miku-icon"><img src="images/miku-icon.png"></a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">综述</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">实拍测评<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li><a href="#tabs" data-tab="tab-sp1">扇子</a></li>
+                          <li><a href="#tabs" data-tab="tab-sp2">笛子</a></li>
+                          <li><a href="#tabs" data-tab="tab-sp3">吹奏</a></li>
+                          <li><a href="#tabs" data-tab="tab-sp4">月饼</a></li>
+                          <li><a href="#tabs" data-tab="tab-sp5">侧面</a></li>
+                      </ul>  
+                    </li>
+                    <li><a href="#buymore">更多</a></li>
+                    <li><a class="about" href="#about" data-toggle="modal" data-target="#about">关于</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      
+      
+   <!--轮播图-->   
+      <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#ad-carousel" data-slide-to="1"></li>
+              <li data-target="#ad-carousel" data-slide-to="2"></li>
+              <li data-target="#ad-carousel" data-slide-to="3"></li>
+              <li data-target="#ad-carousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="item active">
+                  <img src="images/01.jpg" alt="1 ">
+                  
+                  <div class="container">
+                      <div class="carousel-caption">
+                          
+                          <p>中秋明月初音是由Goodsmile上海为中国的初音未来粉丝特意打造的手办造型，其正确的名称应该是「初音未来 中秋明月ver」，粉丝们对她的爱称还有“中秋音”、“月饼音”等等</p>
+                          <p><a href="#" class="btn btn-primary">买买买</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="images/02.jpg" alt="2 ">
+                  
+                  <div class="container">
+                      <div class="carousel-caption">
+                          
+                          <p>造型设计是由画师Rellakinoko设计，手办的原型师则是裸奔狗狗，“想要为中国的初音粉呈上具有当地特色的V家商品！”是Goodsmile的原话</p>
+                          <p><a href="#" class="btn btn-primary">买买买</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="images/03.jpg" alt="3 ">
+                 
+                  <div class="container">
+                      <div class="carousel-caption">
+                          
+                          <p>造型选用了汉族传统服饰的汉服以及天女的造型，搭配上极具透明感的羽衣和糖果一般的配色，给各位带来了与众不同的初音。</p>
+                          <p><a href="#" class="btn btn-primary">买买买</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="images/04.jpg" alt="4 ">
+                  
+                  <div class="container">
+                      <div class="carousel-caption">
+                          
+                          <p>背景板的团也同样是原画师Rella亲手绘制，可以化作中秋夜空的效果，也可以在摆在手办脚下表现出水中映月的效果。</p>
+                          <p><a href="#" class="btn btn-primary">买买买</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="images/05.jpg" alt="5">
+                  
+                  <div class="container">
+                      <div class="carousel-caption">
+                         
+                          <p>发根则是使用透明件来还原原画中渐变为烟气的效果，配件有笛子、扇子，以及中秋节最不能缺的月饼</p>
+                          <p><a href="#" class="btn btn-primary">买买买</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+              <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      
+      <!----实拍图---->
+    <div class="container summary">
+      <ul class="nav nav-tabs" id="tabs">
+          <li class="active"><a href="#tab-sp1" data-toggle="tab">扇子</a></li>
+          <li><a href="#tab-sp2" data-toggle="tab">笛子</a></li>
+          <li><a href="#tab-sp3" data-toggle="tab">吹奏</a></li>
+          <li><a href="#tab-sp4" data-toggle="tab">月饼</a></li>
+          <li><a href="#tab-sp5" data-toggle="tab">侧面</a></li>
+      </ul>
+      <div class="tab-content">
+          <div class="tab-pane active" id="tab-sp1">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="images/sp1.jpg" alt="sp1">
+                  </div>
+                  <div class="col-md-5">
+                      <h2 class="tabs-heading">扇子</h2>
+                      <p class="lead">这次的扇面是磨砂质感的，摸起来非常舒适，并且值得一提的是，这次的花纹是我国的国花牡丹！牡丹的美与MIKU是相匹配的，除了牡丹，没有什么花能和这次的MIKU相互媲美！</p>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab-sp2">
+              <div class="row">
+                  
+                  <div class="col-md-6">
+                      <h2 class="tabs-heading">笛子</h2>
+                      <p class="lead">
+迷茫的月色下，梦幻的光点，三生的烟火，似是诉说着那悲情的故事……
+云烟未散，风云又起，花落不易断肠红，谁许人相愿……</p>
+                  </div>
+                  <div class="col-md-5">
+                      <img src="images/sp2.jpg" alt="sp2">
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab-sp3">
+              <div class="row">
+                  <div class="col-md-6 ">
+                      <img src="images/sp3.jpg" alt="sp3">
+                  </div>
+                  <div class="col-md-5  col-md-offset-1">
+                      <h2 class="tabs-heading">吹奏</h2>
+                      <p class="lead">全身洋溢着的那份可爱与秀美<br>
+                      甚至能让周围的空气都变得更加清澈透亮<br>
+                      而服装上的褶边与发饰上的花等细节<br>
+                      也得到了最为细致入微的刻画♪</p>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab-sp4">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h2 class="tabs-heading">月饼</h2>
+                      <p class="lead">这个月饼不仅制作秀美，而且看起来十分可口的样子，您是否想与MIKU一同食用这块精致的月饼呢！？</p>
+                  </div> 
+                  <div class="col-md-5">
+                      <img src="images/sp4.jpg" alt="sp4">
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane" id="tab-sp5">
+              <div class="row">
+                  <div class="col-md-6 ">
+                      <img src="images/sp5.jpg" alt="sp5">
+                  </div>
+                  <div class="col-md-5  col-md-offset-1">
+                      <h2 class="tabs-heading">侧面</h2>
+                      <p class="lead">这次是汉服版，华美的裙摆，略长的水袖，以及''仙女带''，都衬托着一个词——中秋明月！
+小巧精美的发饰，吊坠的流苏是极美的渐变，花的涂装也非常到位，请各位赏神者掀开她的华盖！♪</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr class="divider">
+      <div class="row" id="buymore">
+          <div class="col-md-4">
+              <img src="images/more1.jpg" alt="more" class="img-circle">
+              <h2>粘土人 雪未来 </h2>
+              <p><a href="#" class="btn btn-danger">点我购买</a></p>
+          </div>
+          <div class="col-md-4">
+              <img src="images/more2.jpg" alt="more" class="img-circle">
+              <h2>猎奇萌角 粘土人 </h2>
+              <p><a href="#" class="btn btn-danger">点我购买</a></p>
+          </div>
+          <div class="col-md-4">
+              <img src="images/more3.jpg" alt="more" class="img-circle">
+              <h2>初音未来～花色衣～</h2>
+              <p><a href="#" class="btn btn-danger">点我购买</a></p>
+          </div>
+      </div>
+    </div>  
+    <div class="modal" id="about" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+中秋明月初音是初音未来的二次创作造型。
+由Goodsmile上海为中国的初音未来粉丝特意打造的手办造型，有相关的同人歌曲创作，拥有不错的人气。
+</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-btndefault" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+        <p>@2016 初音未来</p>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                $('#tabs a[href=#' + tabId + ']').tab('show');
+        });
+    });
+       
+    </script>
+</body>
+</html>
